@@ -1,0 +1,49 @@
+battlecards
+
+3 bomb
+1 flag
+1 spy
+4 2
+3 3
+3 4
+2 5
+2 6
+1 7
+1 8
+1 9
+1 10
+
+shuffle the cards
+pick card function
+delete card function
+reshuffle deck
+card transfer
+
+deck
+
+hand
+reserve
+front
+
+1-3 bomb(b)
+4 flag(f)
+5 spy(s)
+6-9 scout(2)
+10-12 miner(3)
+13-15 sgt(4)
+16-17 lt(5)
+18-19 captain(6)
+20 major(7)
+21 colonel(8)
+22 general(9)
+23 marshall(10)
+
+
+1 b
+2
+3 6
+4
+5
+
+
+

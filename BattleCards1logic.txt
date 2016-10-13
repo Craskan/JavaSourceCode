@@ -1,0 +1,84 @@
+import java.util.Scanner;
+
+public class BattleCards
+{
+function makeMove
+{
+if(gameNotOver)
+{
+display board
+
+}
+else
+{
+declare winner
+}
+}
+
+
+
+}
+
+question: if I sum up all the arrays into a data object, do I want the data object to actually copy the array (and have to dig into a nested loop every time I want to change it), or just copy over it's reference, this way I can change the individual arrays and only have the dig into the nested object ocasionally.  
+
+question: what are some of the pluses of a data reference object?
+well, there are a lot of advantages to working with parts and being able to handle it as a whole.  Since the object just holds references, you only have to pass in as much of the object as you would like, unlike an actual copy where the actual values need to be copied.  
+
+*however, the Java compiler doesn't seem to support it yet :)
+
+question: why do we need a data object at all?  I don't like using private variables, and in Java, each method is only allowed to return one object.  Imagine say I wanted remove an item from one array and add it onto another. Well, since I can only return 1 object, it will take me 2 method calls, one to addItem, (to create a new array identical to the old only with an extra item and return it), and then a call to deleteItem, (to create a new array identical to the old only with one less item in it).  Sending one value from one array to another or updating a value in one array from a value in another, is something this class will use quite frequently.  If it was all wrapped as one object, the whole object could be called, all the internal arrays could be completely modified, and the whole object returned (with all the changes in place) with only ONE method call.  
+
+what are the mechanics of doing a "drawCard" method, well if the deckPick is already shuffled, you can call the value of the top card, store it a temporary variable, add it to the "liveCard" pile, then delete the top card from off the deckPick.
+
+is it worthwhile to store all a program's data into one multitiered array.  Unfortunately, it is only possible to return one object.  A couple possible alternatives include 1, using private arrays and variables, group everything into one big tiered array, or hardcode all such cases into the main method.  Private arrays can be nice, however, static and private variables don't play nice, you can modify, however, you can't call anything private with normal static methods.  
+
+frontline//these are the cards which can be attack/be attacked
+hand//these are your reserve cards
+liveCards//this is the concatonation of your frontline and hand
+deadPile//all cards which have been removed from play
+deck//all cards not in liveCards or deadPile 
+
+compiling the grand object, although an array can be held in an array, the compiler won't simply let you assign array[0][0] = array x, it will only allow us create those arrays with individual Strings.  Therefore some method must be created to handle this for us.  Let's see, it will need 2 indexes specifying aspect type, for which player, then it will fill up the last box with the actual values 
+
+
+what do you need to initiate player, 1 player type(computer or human),2 player name, 3 load player deck, 4 shuffle player deck, 5 deal live cards, 6 remove liveCards from deckPicks,7 pick frontline cards 8 cards liveCards not picked are stored in hand 9 initialize players "place in turn order"
+
+
+
+enemy turn human
+1a. picks card to attack with
+1b. resets frontline
+
+
+turn sequence
+display hand
+display frontline
+display knownEnemyHand
+
+1. refill hand
+
+
+2. check if flag in frontline
+if(flagInFrontline = true)
+{
+PP would you like to attack or reshuffle cards
+if(shuffle)
+{
+2b. shuffle
+frontline cards be picked
+}
+2a. attack
+}
+else
+{
+pp which card would you like to attack
+2a. attack
+}
+
+3. refill frontine
+
+
+
+
+display livecards //should be pretty easy
+pick card//
